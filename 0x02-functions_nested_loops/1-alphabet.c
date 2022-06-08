@@ -1,17 +1,20 @@
-#include "holberton.h"
+#include "main.h"
 /**
- * main - prints the string "Holberton" from a character array.
- * Return: 0 on success.
+ * print_alphabet -Prints lowercase alpbates
+ *
+ *Return: Always 0 (success)
  */
-int main(void)
-{
-  char c[] = "Holberton";
-  int i;
 
-  for (i = 0; i < 9; i++)
-    {
-      _putchar(c[i]);
-    }
-  _putchar('\n');
-  return (0);
+void print_alphabet(void)
+{
+char alp = 'a';
+
+while (alp <= 'z')
+{
+_putchar(alp);
+alp++;
+
+}
+_putchar('\n');
+
 }
